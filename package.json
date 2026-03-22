@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npx prisma migrate deploy && node index.js",
     "test": "set NODE_ENV=test && set DATABASE_URL=postgresql://postgres:werio456@localhost:5432/auth_db_test && set JWT_SECRET=secret_untuk_testing && jest --runInBand",
     "test:watch": "set DATABASE_URL=postgresql://postgres:werio456@localhost:5432/auth_db_test && set JWT_SECRET=secret_untuk_testing && jest --watch --runInBand"
   },
